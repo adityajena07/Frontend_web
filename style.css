@@ -1,0 +1,300 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border-bottom: 1px solid white;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.cart-icon {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+/* Banner Section */
+.banner {
+    height: 400px;
+    background: url('images/banner.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner h2,
+.banner p {
+    z-index: 2;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.banner p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
+
+
+
+.btn:hover {
+    background: #ffb000;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.filter-buttons button.active, .filter-buttons button:hover {
+    background: #ff4500;
+    color: #fff;
+}
+
+
+
+
+
+
+/* Menu Section */
+.menu {
+    padding: 60px;
+    background: #fff;
+}
+
+.menu h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #ff4500;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.menu-item {
+    background: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+}
+
+.menu-item .info {
+    padding: 15px;
+}
+
+.menu-item h4 {
+    margin: 10px 0;
+    color: #ff4500; /* Updated color */
+}
+
+.menu-item p {
+    margin: 0;
+    color: #555;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 105, 0, 0.6);
+}
+
+.menu-item button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.menu-item button:hover {
+    background: #e64000;
+}
+
+/* Popup Styles */
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #28a745; /* Updated popup background color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+    font-size: 14px;
+    max-width: 90%; /* Ensure the popup doesn't overflow */
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar h1 {
+        font-size: 18px;
+    }
+
+    .banner h2 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 0.9rem;
+    }
+
+    .menu h3 {
+        font-size: 22px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .menu-item img {
+        height: 100px;
+    }
+
+    .menu-item h4 {
+        font-size: 16px;
+    }
+
+    .menu-item button {
+        font-size: 14px;
+    }
+
+    .popup {
+        font-size: 16px;
+        bottom: 10px;
+        right: 10px;
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 16px;
+    }
+
+    .banner h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner p {
+        font-size: 0.8rem;
+    }
+
+    .menu h3 {
+        font-size: 20px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item img {
+        height: 90px;
+    }
+
+    .menu-item h4 {
+        font-size: 14px;
+    }
+
+    .menu-item button {
+        font-size: 12px;
+    }
+
+    .popup {
+        font-size: 14px;
+        bottom: 5px;
+        right: 5px;
+        max-width: 70%;
+    }
+}

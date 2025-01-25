@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/black_logo.png">
+    <title>Menu Card</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>
+            Frontend web
+            <img src="images/black_logo.png" alt="Shop Logo">
+        </h1>
+        <img src="images/cartimg.png" alt="Cart" class="cart-icon">
+    </div>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <div>
+            <h2>Welcome to Restaurant</h2>
+            <p>Explore our delicious dishes</p>
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <div class="menu">
+        <h3>Our Special Dishes</h3>
+
+        <div class="filter-buttons">
+            <button class="active" data-category="all">All</button>
+            <button data-category="burger">Burger</button>
+            <button data-category="pizza">Pizza</button>
+            <button data-category="pasta">Pasta</button>
+            <button data-category="fries">Fries</button>
+        </div>
+
+        <div class="menu-grid">
+            <div class="menu-item" data-category="pizza">
+                <img src="images/f1.png" alt="Pizza">
+                <div class="info">
+                    <h4>Margerita with cheese</h4>
+                    <p>₹120</p> <!-- INR price -->
+                </div>
+                <button class="add-to-cart" data-name="Margerita" data-price="120">Add</button>
+            </div>
+            <div class="menu-item"  data-category="burger">
+                <img src="images/f2.png" alt="Burger">
+                <div class="info">
+                    <h4>Chicken Burger</h4>
+                    <p>₹70</p> <!-- INR price -->
+                </div>
+                <button class="add-to-cart" data-name="Chicken Burger" data-price="70">Add</button>
+            </div>
+            <div class="menu-item"  data-category="pizza">
+                <img src="images/f3.png" alt="Pizza">
+                <div class="info">
+                    <h4>Pizza</h4>
+                    <p>₹180</p> <!-- INR price -->
+                </div>
+                <button class="add-to-cart" data-name="Pizza" data-price="180">Add</button>
+            </div>
+            <div class="menu-item"  data-category="pasta">
+                <img src="images/f4.png" alt="Pasta">
+                <div class="info">
+                    <h4>Classy Pasta</h4>
+                    <p>₹60</p> <!-- INR price -->
+                </div>
+                <button class="add-to-cart" data-name="Classy Pasta" data-price="60">Add</button>
+            </div>
+            <div class="menu-item"  data-category="fries">
+                <img src="images/f5.png" alt="French fries">
+                <div class="info">
+                    <h4>French fries</h4>
+                    <p>₹55</p> <!-- INR price -->
+                </div>
+                <button class="add-to-cart" data-name="French fries" data-price="55">Add</button>
+            </div>
+            <div class="menu-item" data-category="pizza">
+                <img src="images/f6.png" alt="Pizza">
+                <div class="info">
+                    <h4>Pizza</h4>
+                    <p>₹140</p> <!-- INR price -->
+                </div>
+                <button class="add-to-cart" data-name="Pizza" data-price="140">Add</button>
+            </div>
+            <div class="menu-item"  data-category="burger">
+                <img src="images/f7.png" alt="Burger">
+                <div class="info">
+                    <h4>Veg Cheese Burger</h4>
+                    <p>₹50</p> <!-- INR price -->
+                </div>
+                <button class="add-to-cart" data-name="Cheese Burger" data-price="50">Add</button>
+            </div>
+            <div class="menu-item"  data-category="burger">
+                <img src="images/f8.png" alt="Burger">
+                <div class="info">
+                    <h4>Spicy Burger</h4>
+                    <p>₹40</p> <!-- INR price -->
+                </div>
+                <button class="add-to-cart" data-name="Spicy Burger" data-price="40">Add</button>
+            </div>
+            <div class="menu-item" data-category="pasta">
+                <img src="images/f9.png" alt="Pasta">
+                <div class="info">
+                    <h4>Pasta with Cheese</h4>
+                    <p>₹70</p> <!-- INR price -->
+                </div>
+                <button class="add-to-cart" data-name="cheese pasta" data-price="70">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Shop Name. All Rights Reserved.</p>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">Dish added successfully!</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
